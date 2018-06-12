@@ -1,8 +1,8 @@
-# AES256 Implementation Written entirely in Assembly
+# AES256 Implementation written entirely in Assembly
 FASM-Enabled Intel x86 Assembly code, intended for usage in real-mode operating systems.
 
 
-**This code has only been tested on VirtualBox, and the actual implementation of the algorithm have not been extensively tested itself. USE AT YOUR OWN DISCRETION!**
+**This code has only been tested on VirtualBox, and the actual implementation of the algorithm has not been extensively tested itself. USE AT YOUR OWN DISCRETION!**
 
 ## Compiling
 I assembled the `implementation.asm` with Flat Assembler (https://flatassembler.net/ ) on Windows 10, with no Makefile. The programs that I used were:
@@ -13,6 +13,4 @@ I assembled the `implementation.asm` with Flat Assembler (https://flatassembler.
 
 Instead of writing a linker script, for some reason I manually copied the assembled version of implementation.asm into the first sector of a file I created called floppy.img with HxD upon each build. Then, I ran it in VirtualBox to see the result. No debugging tools were used.
 
-While this should work in Protected and Long Mode, I have not tested such running conditions yet.
-
-
+While this code should work in Protected and Long Mode, I have not tested it under such running conditions yet.
